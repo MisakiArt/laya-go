@@ -17,15 +17,15 @@
     "cleanup": 600
   },
   "mysql": {
-    "dsn": "root:123456@tcp(mysql:3306)/test?charset=utf8&parseTime=True&loc=Local",
+    "dsn": "dev_omni:4joxGGWvNPYrWurs@tcp(rm-uf6bx4378q6u408q490110.mysql.rds.aliyuncs.com:3306)/dev_omni?charset=utf8&parseTime=True&loc=Local",
     "maxIdleConn": 10,
     "maxOpenConn": 100,
     "connMaxLifetime": 6
   },
   "redis": {
     "db": 0,
-    "addr": "redis:6379",
-    "pwd": "",
+    "addr": "r-uf6d3b3c3efe3f04.redis.rds.aliyuncs.com:6379",
+    "pwd": "RcZPRzYsPMmeyg5hDB0",
     "poolSize": 5,
     "maxRetries": 3,
     "idleTimeout": 1000
