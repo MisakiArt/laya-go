@@ -57,8 +57,8 @@ func optimizeTable(connect *sql.DB, partition string,ch chan<- string,wg *sync.W
 	log.Println(sqlString)
 	_,err := connect.Exec(sqlString)
 	if err != nil {
-		log.Fatal(err)
 		ch <- partition+err.Error()
+		log.Fatal(err)
 	} else  {
 		ch <- partition+" optimize success"
 	}
